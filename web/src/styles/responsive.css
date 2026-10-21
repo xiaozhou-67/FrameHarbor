@@ -1,0 +1,1053 @@
+@media (max-width: 1200px) {
+  .header-inner {
+    gap: 30px;
+    width: calc(100% - 50px);
+  }
+  .desktop-nav {
+    gap: 23px;
+  }
+  .header-actions {
+    gap: 11px;
+  }
+  .location-pill {
+    display: none;
+  }
+  .container {
+    width: calc(100% - 64px);
+  }
+  .home-movies {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 22px;
+  }
+  .catalog-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .four-columns .poster-link {
+    aspect-ratio: 5 / 7;
+  }
+  .movie-card .small {
+    font-size: 11px;
+  }
+  .hero-caption {
+    right: 5%;
+  }
+  .editorial-banner {
+    padding: 35px;
+  }
+  .seat-art {
+    width: 260px;
+    margin-right: 25px;
+    gap: 10px;
+  }
+  .cinema-grid {
+    gap: 17px;
+  }
+  .cinema-card-content {
+    padding: 17px;
+  }
+  .cinema-card-bottom {
+    flex-wrap: wrap;
+  }
+  .login-layout {
+    gap: 55px;
+  }
+  .login-poster-stack img {
+    width: 110px;
+  }
+  .login-poster-stack img:nth-child(2) {
+    width: 135px;
+  }
+  .booking-layout {
+    grid-template-columns: minmax(0, 1fr) 315px;
+    gap: 20px;
+  }
+  .seat-panel {
+    padding-inline: 10px;
+  }
+  .seat-assistant {
+    gap: 9px;
+    margin-inline: 5px;
+  }
+  .venue-list-card {
+    grid-template-columns: 180px 1fr;
+  }
+  .venue-list-card .venue-price {
+    grid-column: 2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .venue-list-card .cinema-illustration {
+    grid-row: span 2;
+    height: 210px;
+  }
+  .admin-layout {
+    grid-template-columns: 205px minmax(0, 1fr);
+  }
+  .admin-sidebar {
+    padding-inline: 15px;
+  }
+  .admin-content {
+    padding: 35px 25px 65px;
+  }
+  .metric-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .metric-card > strong {
+    font-size: 32px;
+  }
+  .dashboard-columns {
+    grid-template-columns: 1fr;
+  }
+  .quick-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .header-inner {
+    height: 73px;
+    gap: 24px;
+  }
+  .desktop-nav {
+    gap: 19px;
+  }
+  .account-link > span:last-child {
+    display: none;
+  }
+  .hero {
+    min-height: 600px;
+  }
+  .hero-art {
+    background-position: 60% center;
+  }
+  .hero-caption {
+    display: none;
+  }
+  .hero-content {
+    padding-top: 70px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+  .intro-strip {
+    gap: 18px;
+  }
+  .intro-strip .eyebrow {
+    display: none;
+  }
+  .four-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .four-columns .poster-link {
+    aspect-ratio: 5 / 6;
+  }
+  .cinema-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .cinema-card {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+  }
+  .cinema-card-content {
+    padding: 25px;
+    align-self: center;
+  }
+  .coupon-banner {
+    padding: 25px;
+    gap: 18px;
+  }
+  .coupon-stamp {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+  }
+  .catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .page-heading {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .page-heading > .search-box {
+    min-width: 300px;
+  }
+  .movie-detail {
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    padding: 28px;
+  }
+  .detail-poster {
+    width: 200px;
+  }
+  .detail-copy h1 {
+    font-size: 32px;
+  }
+  .detail-meta {
+    gap: 8px;
+  }
+  .detail-meta > span + span {
+    padding-left: 8px;
+  }
+  .reviews-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .review-form {
+    max-width: none;
+  }
+  .show-row {
+    gap: 22px;
+  }
+  .venue-hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+  }
+  .venue-halls {
+    border-left: 0;
+    border-top: 1px solid #405541;
+    padding: 20px 0 0;
+  }
+  .login-layout {
+    grid-template-columns: 1fr 360px;
+    gap: 35px;
+  }
+  .login-story h1 {
+    font-size: 32px;
+  }
+  .login-poster-stack {
+    padding: 0;
+    height: 220px;
+  }
+  .login-poster-stack img {
+    width: 85px;
+  }
+  .login-poster-stack img:nth-child(2) {
+    width: 105px;
+  }
+  .login-form {
+    padding: 27px;
+  }
+  .account-layout {
+    grid-template-columns: 1fr 265px;
+    gap: 25px;
+  }
+  .watchlist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .account-heading {
+    flex-wrap: wrap;
+  }
+  .account-heading > a {
+    margin-left: 95px;
+  }
+  .account-heading h1 {
+    font-size: 23px;
+  }
+  .booking-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .booking-summary {
+    max-width: none;
+  }
+  .booking-heading {
+    align-items: flex-start;
+  }
+  .booking-heading .badge {
+    display: none;
+  }
+  .ticket-card {
+    grid-template-columns: 1fr 210px;
+  }
+  .ticket-main {
+    padding: 23px;
+    gap: 20px;
+  }
+  .ticket-main > img {
+    width: 85px;
+    height: 119px;
+  }
+  .ticket-info h2 {
+    font-size: 20px;
+  }
+  .ticket-info .row-between {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ticket-stub {
+    padding: 20px;
+  }
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+  .admin-sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 20px 25px;
+  }
+  .admin-brand {
+    display: none;
+  }
+  .admin-sidebar nav {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 3px;
+  }
+  .admin-sidebar nav a {
+    flex-shrink: 0;
+    padding: 8px 11px;
+    font-size: 11px;
+    gap: 7px;
+  }
+  .admin-sidebar-note {
+    display: none;
+  }
+  .admin-content {
+    padding: 30px 25px 65px;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 13px;
+  }
+  .container {
+    width: calc(100% - 36px);
+  }
+  .header-inner {
+    height: 67px;
+    width: calc(100% - 36px);
+  }
+  .brand-mark {
+    font-size: 40px;
+    width: 34px;
+  }
+  .brand-type {
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+  .brand-type small {
+    font-size: 6px;
+    letter-spacing: 1.2px;
+  }
+  .desktop-nav,
+  .search-link,
+  .signout {
+    display: none;
+  }
+  .header-actions {
+    gap: 8px;
+  }
+  .header-actions .small-button {
+    padding: 7px 9px;
+    min-height: 33px;
+    font-size: 10px;
+  }
+  .admin-entry {
+    font-size: 10px;
+  }
+  .mobile-toggle {
+    display: inline-flex;
+    width: 30px;
+  }
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 17px 20px;
+    border-top: 1px solid var(--line);
+    overflow-x: auto;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .mobile-nav .router-link-exact-active {
+    color: var(--mint);
+  }
+  .hero {
+    min-height: 570px;
+  }
+  .hero-art {
+    background-position: 58% center;
+    opacity: 0.85;
+  }
+  .hero-content {
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  .hero h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .hero p {
+    font-size: 12px;
+  }
+  .hero .button-row {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 28px;
+  }
+  .hero .button {
+    padding: 12px 18px;
+    font-size: 12px;
+  }
+  .hero-secondary {
+    font-size: 11px;
+  }
+  .hero-bottom {
+    font-size: 7px;
+    letter-spacing: 1.5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .hero-bottom > span:last-child {
+    font-size: 6px;
+    gap: 8px;
+  }
+  .intro-strip {
+    padding: 22px 0;
+    font-size: 11px;
+  }
+  .section-block {
+    margin-top: 38px;
+  }
+  .section-heading {
+    margin-bottom: 22px;
+    align-items: flex-end;
+    gap: 12px;
+  }
+  .section-heading h2 {
+    font-size: 20px;
+  }
+  .section-heading .eyebrow {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  .section-heading > .text-link {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .section-heading > .text-link svg {
+    width: 14px;
+  }
+  .count {
+    font-size: 10px;
+    margin-left: 7px;
+  }
+  .home-movies,
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 16px;
+  }
+  .poster-status {
+    top: 9px;
+    left: 8px;
+    font-size: 8px;
+  }
+  .movie-card-title {
+    gap: 5px;
+    margin-top: 11px;
+  }
+  .movie-card h3 {
+    font-size: 14px;
+  }
+  .movie-card .rating {
+    font-size: 11px;
+    gap: 3px;
+  }
+  .movie-card .small {
+    font-size: 9px;
+  }
+  .movie-card .dot {
+    margin-inline: 2px;
+  }
+  .rating svg {
+    width: 12px;
+  }
+  .poster-action {
+    display: none;
+  }
+  .editorial-banner {
+    padding: 27px 23px;
+    margin-top: 36px;
+    min-height: 245px;
+  }
+  .editorial-banner h2 {
+    font-size: 24px;
+  }
+  .editorial-banner .eyebrow {
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+  .editorial-banner p {
+    max-width: 170px;
+    font-size: 10px;
+  }
+  .editorial-banner .text-link {
+    font-size: 11px;
+  }
+  .seat-art {
+    position: absolute;
+    right: -90px;
+    width: 180px;
+    margin: 0;
+    opacity: 0.45;
+    gap: 9px 7px;
+  }
+  .seat-art span {
+    height: 20px;
+    border-bottom-width: 3px;
+  }
+  .four-columns {
+    gap: 25px 16px;
+  }
+  .four-columns .poster-link {
+    aspect-ratio: 5 / 7;
+  }
+  .recommendation-reason {
+    font-size: 9px;
+    gap: 4px;
+  }
+  .cinema-card {
+    grid-template-columns: 115px 1fr;
+  }
+  .cinema-illustration {
+    height: 150px;
+  }
+  .cinema-building {
+    width: 87%;
+    height: 95px;
+    padding: 10px;
+    gap: 4px;
+    box-shadow: 10px -8px 0 #617664;
+  }
+  .cinema-building > span {
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .cinema-building i {
+    width: 24%;
+    border-width: 2px;
+  }
+  .cinema-city {
+    font-size: 10px;
+    left: 10px;
+    top: 10px;
+  }
+  .cinema-city small {
+    font-size: 8px;
+  }
+  .cinema-card-content {
+    padding: 15px;
+  }
+  .cinema-card-content h3 {
+    font-size: 12px;
+  }
+  .cinema-card-content p {
+    font-size: 9px;
+  }
+  .cinema-card-content p svg {
+    display: none;
+  }
+  .cinema-card-bottom {
+    margin-top: 10px;
+    padding-top: 8px;
+  }
+  .cinema-card-bottom .small {
+    font-size: 9px;
+  }
+  .coupon-banner {
+    margin: 35px 0 45px;
+    padding: 22px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .coupon-stamp {
+    display: none;
+  }
+  .coupon-banner h3 {
+    font-size: 15px;
+  }
+  .coupon-banner p {
+    font-size: 10px;
+  }
+  .coupon-banner > a {
+    margin-left: 0;
+    font-size: 11px;
+    min-height: 35px;
+    padding: 9px 15px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding-block: 30px;
+  }
+  .footer-note {
+    text-align: left;
+    font-size: 10px;
+  }
+  .page-space {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .page-heading {
+    margin: 5px 0 25px;
+    gap: 25px;
+  }
+  .page-heading h1 {
+    font-size: 26px;
+    margin-top: 9px;
+  }
+  .page-heading p {
+    font-size: 11px;
+  }
+  .page-heading > .search-box {
+    width: 100%;
+    min-width: 0;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  .catalog-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 17px;
+  }
+  .segment-tabs {
+    width: 100%;
+    gap: 27px;
+  }
+  .segment-tabs button {
+    font-size: 13px;
+  }
+  .inline-label {
+    font-size: 11px;
+  }
+  .inline-label select {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+  .filter-chips {
+    gap: 8px;
+  }
+  .filter-chips button {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+  .back-link {
+    font-size: 11px;
+    margin-bottom: 23px;
+  }
+  .movie-detail {
+    grid-template-columns: 110px minmax(0, 1fr);
+    padding: 20px;
+    gap: 20px;
+  }
+  .detail-poster {
+    width: 110px;
+    height: 154px;
+  }
+  .detail-copy {
+    display: contents;
+  }
+  .detail-copy > .eyebrow {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    margin-top: 0;
+  }
+  .detail-copy > h1 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    font-size: 24px;
+    margin-top: 28px;
+    line-height: 1.5;
+  }
+  .detail-copy > .english-title {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    margin-top: 75px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .detail-copy > .detail-score {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    margin: 0;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .detail-score > strong {
+    font-size: 23px;
+  }
+  .detail-score > span {
+    flex-basis: 100%;
+    font-size: 9px;
+  }
+  .detail-score > svg {
+    width: 17px;
+  }
+  .detail-copy > .detail-meta {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 10px;
+  }
+  .detail-copy > .synopsis {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 12px;
+  }
+  .detail-copy > .small {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 11px;
+  }
+  .detail-copy > .button-row {
+    grid-column: 1 / -1;
+    margin: 3px 0 0;
+  }
+  .detail-copy .button {
+    font-size: 12px;
+    padding: 11px 15px;
+  }
+  .date-tabs {
+    gap: 8px;
+    margin-bottom: 13px;
+  }
+  .date-tabs button {
+    min-width: 100px;
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+  .show-row {
+    gap: 12px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  .show-time {
+    min-width: 63px;
+  }
+  .show-time strong {
+    font-size: 22px;
+  }
+  .show-venue h3 {
+    font-size: 12px;
+  }
+  .show-venue p {
+    font-size: 9px;
+  }
+  .show-row .price {
+    font-size: 17px;
+  }
+  .show-row .button {
+    margin-left: auto;
+    padding: 7px 11px;
+    min-height: 33px;
+    font-size: 10px;
+  }
+  .section-heading > span.muted {
+    display: none;
+  }
+  .form-card {
+    padding: 23px;
+  }
+  .venue-list-card {
+    grid-template-columns: 90px 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+  .venue-list-card .cinema-illustration {
+    height: 165px;
+  }
+  .venue-copy h2 {
+    font-size: 16px;
+  }
+  .venue-copy p {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+  .venue-copy .tags span {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+  .venue-price .price {
+    font-size: 16px;
+  }
+  .venue-price {
+    gap: 10px;
+  }
+  .venue-price .button {
+    padding: 7px 10px;
+    min-height: 33px;
+    font-size: 10px;
+  }
+  .venue-hero {
+    padding: 25px;
+  }
+  .venue-hero h1 {
+    font-size: 24px;
+  }
+  .venue-hero p {
+    font-size: 11px;
+  }
+  .login-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+  .login-story {
+    padding-top: 5px;
+  }
+  .login-story h1 {
+    font-size: 30px;
+    margin: 12px 0;
+  }
+  .login-story > p {
+    font-size: 11px;
+  }
+  .login-poster-stack,
+  .login-story > .small {
+    display: none;
+  }
+  .login-form {
+    width: 100%;
+    padding: 26px;
+    gap: 23px;
+  }
+  .login-form h2 {
+    font-size: 25px;
+  }
+  .account-heading {
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+  .avatar.large {
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+  }
+  .account-heading h1 {
+    font-size: 22px;
+  }
+  .account-heading p {
+    font-size: 11px;
+  }
+  .account-heading > a {
+    margin-left: 65px;
+    font-size: 11px;
+    min-height: 35px;
+    padding: 9px 15px;
+  }
+  .account-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  .sticky-card {
+    position: static;
+  }
+  .preference-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .watchlist-grid {
+    gap: 25px 16px;
+  }
+  .booking-heading h1 {
+    font-size: 25px;
+  }
+  .booking-heading p {
+    font-size: 10px;
+  }
+  .seat-panel {
+    padding: 25px 10px 20px;
+  }
+  .screen {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+  .seat-legend {
+    gap: 13px;
+    font-size: 9px;
+    margin-bottom: 20px;
+  }
+  .seat-assistant {
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .seat-panel > .small {
+    font-size: 9px;
+  }
+  .summary-movie img {
+    width: 80px;
+    height: 112px;
+  }
+  .booking-summary {
+    padding: 25px;
+  }
+  .ticket-card {
+    grid-template-columns: 1fr;
+  }
+  .ticket-main {
+    padding: 22px;
+    gap: 17px;
+  }
+  .ticket-main > img {
+    width: 75px;
+    height: 105px;
+  }
+  .ticket-info h2 {
+    font-size: 21px;
+  }
+  .ticket-info > p {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+  .ticket-info .tags span {
+    font-size: 9px;
+  }
+  .ticket-info .order-number {
+    font-size: 8px;
+  }
+  .ticket-stub {
+    border-left: 0;
+    border-top: 1px dashed #56714b;
+    padding: 23px;
+    gap: 11px;
+  }
+  .ticket-stub::before {
+    left: -12px;
+    top: -11px;
+  }
+  .ticket-stub::after {
+    left: auto;
+    right: -12px;
+    bottom: auto;
+    top: -11px;
+  }
+  .ticket-stub .button {
+    max-width: 280px;
+  }
+  .toast-stack {
+    right: 15px;
+    bottom: 15px;
+  }
+  .toast {
+    padding: 13px 16px;
+    font-size: 11px;
+  }
+  .admin-sidebar {
+    padding: 15px;
+  }
+  .admin-content {
+    padding: 25px 18px 55px;
+  }
+  .admin-page-heading {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .admin-page-heading h1 {
+    font-size: 26px;
+  }
+  .admin-page-heading p {
+    font-size: 11px;
+  }
+  .metric-grid {
+    gap: 12px;
+  }
+  .metric-card {
+    padding: 17px;
+  }
+  .metric-card > span {
+    font-size: 10px;
+  }
+  .metric-card > strong {
+    font-size: 28px;
+  }
+  .metric-card > small {
+    font-size: 8px;
+  }
+  .metric-card > svg {
+    display: none;
+  }
+  .panel {
+    padding: 20px;
+  }
+  .table-scroll {
+    padding: 0;
+  }
+  .panel h2 {
+    font-size: 19px;
+  }
+  .panel .section-heading > span {
+    display: none;
+  }
+  .revenue-chart {
+    gap: 10px;
+  }
+  .chart-column > span {
+    font-size: 8px;
+  }
+  .chart-column > small {
+    font-size: 9px;
+  }
+  .chart-track {
+    height: 135px;
+  }
+  .table-toolbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .table-toolbar .search-box {
+    min-width: 0;
+    width: 100%;
+  }
+  .table-toolbar .inline-label {
+    flex-wrap: wrap;
+  }
+  .table-toolbar .inline-label select {
+    max-width: 260px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .editor-form {
+    padding: 22px;
+  }
+  .dialog-heading {
+    padding: 17px 22px;
+  }
+  .confirm-dialog {
+    padding: 25px;
+  }
+  .dialog-actions .button {
+    padding: 10px 16px;
+  }
+  .moderation-card .button {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+  th,
+  td {
+    padding-inline: 15px;
+  }
+}

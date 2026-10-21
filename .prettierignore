@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/
+package-lock.json
+LICENSE
+web/public/license.txt
+*.log
+dependency-audit.json
+docs/checks/*.json

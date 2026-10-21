@@ -1,0 +1,16 @@
+node_modules/
+dist/
+data/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.log
+!docs/checks/static-check.log
+!docs/checks/format-check.log
+.DS_Store
+.idea/
+.vscode/
+coverage/

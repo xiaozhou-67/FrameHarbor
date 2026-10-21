@@ -1,0 +1,28 @@
+
+> frameharbor@1.0.0 check
+> npm run typecheck && npm run lint && npm run audit:source
+
+
+> frameharbor@1.0.0 typecheck
+> tsc -p tsconfig.server.json --noEmit && vue-tsc -p tsconfig.web.json --noEmit
+
+
+> frameharbor@1.0.0 lint
+> eslint . --max-warnings 0
+
+
+> frameharbor@1.0.0 audit:source
+> node tools/static-audit.mjs
+
+{
+  "status": "PASS",
+  "files": 92,
+  "relativeImports": 209,
+  "vueTemplates": 26,
+  "localAssetReferences": 5,
+  "apiCallsChecked": 43,
+  "apiEndpoints": 45,
+  "sqlStatementsChecked": 70,
+  "stylesheetsParsed": 2,
+  "errors": []
+}
