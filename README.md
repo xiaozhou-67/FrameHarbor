@@ -2,13 +2,9 @@
 
 **把今晚，留给大银幕。**
 
-项目作者：Changqing Zhou · zcq@njfu.edu.cn
+基于 FilmSys 电影售票业务重新设计的完整前后端项目。用户端与运营台共用 Vue 3 界面，Express 提供真实持久化 API，SQLite 保存用户、座位库存、订单及审计记录。
 
-基于 FilmSys 电影售票业务重新设计的完整前后端项目。用户端与运营台共用 Vue 3 界面，Express 提供真实持久化 API，SQLite 保存用户、座位库存、订单及审计记录。项目位置：`D:\个人项目\FrameHarbor`。
-
-当前交付为源码与静态检查结果；未启动服务、未创建业务数据库、未执行测试、未构建前端。审查结果见 [静态审查报告](docs/STATIC_REVIEW.md)。
-
-## 可以审查的内容
+## 演示内容
 
 | 用户端                                  | 运营台                                       |
 | --------------------------------------- | -------------------------------------------- |
@@ -39,9 +35,8 @@ FrameHarbor/
 └─ .env.example            # 本地配置模板
 ```
 
-## 审查后如何启动
+## 快速启动
 
-以下命令供你后续验收使用，本次交付没有执行启动或构建。
 
 在 PowerShell 中：
 
@@ -87,22 +82,5 @@ location / {
     proxy_set_header X-Forwarded-Proto $scheme;
 }
 ```
-
-## 静态检查
-
-```powershell
-npm run check
-```
-
-此命令仅执行后端 `tsc --noEmit`、前端 `vue-tsc --noEmit`、ESLint 和源码读取检查器，不导入或执行业务模块。检查器验证相对导入、Vue 模板编译、资源、前后端路由、必要交付文件及危险/未完成代码模式。它按本次静态交付要求检查 `data/` 和 `dist/` 不存在，后续开始运行验收后请分别运行 `npm run typecheck` 与 `npm run lint`，或调整此交付专用规则。
-
-## 进一步审查
-
-- [设计说明](docs/superpowers/specs/2026-10-21-frameharbor-design.md)
-- [实施计划](docs/superpowers/plans/2026-10-21-frameharbor.md)
-- [接口契约](docs/API.md)
-- [静态审查报告](docs/STATIC_REVIEW.md)
-- [后续运行验收清单](docs/ACCEPTANCE.md)
-- [来源与许可](docs/ORIGIN.md)
-
+项目作者：Changqing Zhou · zcq@njfu.edu.cn
 上游 FilmSys 采用 GPL-3.0，本项目保留该许可证及来源说明。原项目目录保持原样。
