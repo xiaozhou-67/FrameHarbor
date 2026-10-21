@@ -4,11 +4,9 @@
 
 项目作者：Changqing Zhou · zcq@njfu.edu.cn
 
-基于 FilmSys 电影售票业务重新设计的完整前后端项目。用户端与运营台共用 Vue 3 界面，Express 提供真实持久化 API，SQLite 保存用户、座位库存、订单及审计记录。项目位置：`D:\个人项目\FrameHarbor`。
+帧港是一套集电影发现、在线选座购票和影院运营管理于一体的全栈项目。用户端与运营台共用 Vue 3 界面，Express 提供业务 API，SQLite 持久化保存用户、座位库存、订单和运营操作记录。
 
-当前交付为源码与静态检查结果；未启动服务、未创建业务数据库、未执行测试、未构建前端。审查结果见 [静态审查报告](docs/STATIC_REVIEW.md)。
-
-## 可以审查的内容
+## 功能
 
 | 用户端                                  | 运营台                                       |
 | --------------------------------------- | -------------------------------------------- |
@@ -34,19 +32,19 @@ FrameHarbor/
 ├─ server/src/             # 认证、目录、社区、票务、运营模块
 ├─ web/src/                # Vue 页面、组件、样式、状态及 API 客户端
 ├─ web/public/art/         # 8 张原创海报 + 1 张首页场景 SVG
-├─ tools/static-audit.mjs  # 只读取源码的静态检查器
-├─ docs/                   # 设计、接口、审查与运行验收文档
+├─ tools/                  # 开发辅助工具
+├─ docs/API.md             # 接口说明
+├─ docs/ORIGIN.md          # 项目来源与许可说明
 └─ .env.example            # 本地配置模板
 ```
 
-## 审查后如何启动
-
-以下命令供你后续验收使用，本次交付没有执行启动或构建。
+## 快速开始
 
 在 PowerShell 中：
 
 ```powershell
-Set-Location -LiteralPath 'D:\个人项目\FrameHarbor'
+git clone https://github.com/xiaozhou-67/FrameHarbor.git
+Set-Location FrameHarbor
 npm ci
 Copy-Item -LiteralPath '.env.example' -Destination '.env'
 ```
@@ -75,7 +73,7 @@ npm run dev
 
 开发服务器代理 `/api`，无需 CORS。Node 直接执行只含可剥离类型语法的 `.ts`。服务端通过 `import.meta.url` 定位 SQL 和前端产物，启动命令在项目根目录执行。
 
-单机生产演示先执行 `npm run build`，再配置 `NODE_ENV=production`、HTTPS `APP_ORIGIN` 和 `TRUST_PROXY`，使用 `npm start`。通过 HTTPS 反向代理指向 API，服务器同时托管 `dist/web` 与 SPA 回退。生产 Cookie 启用 Secure 与 `__Host-` 前缀；应用默认只监听回环地址。真实收费上线另需支付渠道、回调验签、外部账务和运行验收。
+单机生产演示先执行 `npm run build`，再配置 `NODE_ENV=production`、HTTPS `APP_ORIGIN` 和 `TRUST_PROXY`，使用 `npm start`。通过 HTTPS 反向代理指向 API，服务器同时托管 `dist/web` 与 SPA 回退。生产 Cookie 启用 Secure 与 `__Host-` 前缀；应用默认只监听回环地址。真实收费场景需接入支付渠道、回调验签和外部账务系统。
 
 `TRUST_PROXY` 开发默认留空，不信任转发头；本机 HTTPS 反代设为 `loopback`。远端反代填写其准确 IP/CIDR，多项逗号分隔；仅信任受控代理，确保应用端口不对外直通。限流据此识别真实客户端地址。本机单层 Nginx 的 location 配置示例：
 
@@ -88,21 +86,10 @@ location / {
 }
 ```
 
-## 静态检查
+接口字段与调用方式见 [API 文档](docs/API.md)。
 
-```powershell
-npm run check
-```
+## 致谢与许可
 
-此命令仅执行后端 `tsc --noEmit`、前端 `vue-tsc --noEmit`、ESLint 和源码读取检查器，不导入或执行业务模块。检查器验证相对导入、Vue 模板编译、资源、前后端路由、必要交付文件及危险/未完成代码模式。它按本次静态交付要求检查 `data/` 和 `dist/` 不存在，后续开始运行验收后请分别运行 `npm run typecheck` 与 `npm run lint`，或调整此交付专用规则。
+本项目基于 [J1ong/FilmSys](https://github.com/J1ong/FilmSys) 的电影售票业务重新设计，感谢 J1ong 提供的开源项目与实现参考。帧港延续影片、影院、影厅、排片、选座、订单、想看和影评等业务，并重新实现前后端架构、用户界面和票务流程。
 
-## 进一步审查
-
-- [设计说明](docs/superpowers/specs/2026-10-21-frameharbor-design.md)
-- [实施计划](docs/superpowers/plans/2026-10-21-frameharbor.md)
-- [接口契约](docs/API.md)
-- [静态审查报告](docs/STATIC_REVIEW.md)
-- [后续运行验收清单](docs/ACCEPTANCE.md)
-- [来源与许可](docs/ORIGIN.md)
-
-上游 FilmSys 采用 GPL-3.0，本项目保留该许可证及来源说明。原项目目录保持原样。
+项目沿用 [GPL-3.0 许可证](LICENSE)，来源与改动说明见 [ORIGIN.md](docs/ORIGIN.md)。

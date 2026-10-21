@@ -8,8 +8,13 @@ data/
 *.sqlite-*
 *.db
 *.log
-!docs/checks/static-check.log
-!docs/checks/format-check.log
+/.local/
+/docs/ACCEPTANCE.md
+/docs/IMPLEMENTATION_LOG.md
+/docs/STATIC_REVIEW.md
+/docs/checks/
+/docs/superpowers/
+/docs/local/
 .DS_Store
 .idea/
 .vscode/

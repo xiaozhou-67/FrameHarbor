@@ -191,13 +191,10 @@ for (const required of [
   'LICENSE',
   'web/public/license.txt',
   'docs/API.md',
-  'docs/ACCEPTANCE.md',
   'docs/ORIGIN.md',
 ]) {
   if (!existsSync(join(root, required))) fail(join(root, required), 'Required deliverable missing');
 }
-if (existsSync(join(root, 'data')) || existsSync(join(root, 'dist')))
-  errors.push('Runtime data or build output found; this delivery is static-only.');
 console.log(
   JSON.stringify(
     {
